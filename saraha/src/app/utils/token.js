@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const AppError = require("../errors/appError");
+const AppError = require("../common/errors/appError");
 
 const signToken = (user) => {
     if (!process.env.JWT_SECRET) throw new Error("JWT_SECRET is missing from environment variables");
