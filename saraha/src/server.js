@@ -5,7 +5,7 @@ const connectDB = require("./app/common/db/connection");
 const authRoutes = require("./app/auth/auth.route");
 const messageRoutes = require("./app/message/message.route");
 const userRoutes = require("./app/user/user.route");
-const errorHandler = require("./common/errors/errorHandler");
+const errorHandler = require("./app/common/errors/appError");
 
 const app = express();
 app.disable("x-powered-by");
