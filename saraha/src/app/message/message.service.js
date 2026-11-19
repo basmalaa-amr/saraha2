@@ -1,5 +1,5 @@
 const messageRepository = require("./message.repository");
-const AppError = require("../../common/errors/appError");
+const AppError = require("../common/errors/appError");
 
 const createMessage = async (receiverId, data) =>
     messageRepository.create({ ...data, receiver: receiverId });
